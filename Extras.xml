@@ -73,15 +73,6 @@
 	]]>
 </CustomBehavior>
 
-<CustomBehavior File="RunCode">
-<![CDATA[
-	TreeHooks.Instance.InsertHook("Questbot_Main", 0,
-		_deathSupportComposite ?? (_deathSupportComposite = new  CommonBehaviors.Actions.ActionRunCoroutine(ctx => UniversalDeathSupport())));
-		
-	Logging.Write(System.Windows.Media.Colors.Yellow, "[Azyul Death Handler]: v2.0 - Enabled");
-]]>
-</CustomBehavior>
-
 <CustomBehavior File="RunCode" Type="Definition"><![CDATA[
 	public class InstanceTimer
 		{
