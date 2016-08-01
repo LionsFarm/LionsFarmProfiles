@@ -1,4 +1,4 @@
-<CustomBehavior File="RunCode" Type="Definition" > <!-- For sniffing through arrays -->
+<CustomBehavior File="RunCode" Type="Definition" >
 <![CDATA[
 	public static bool Contains(System.Collections.Generic.IEnumerable<string> collection, string item)
 	{
