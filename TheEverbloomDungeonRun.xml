@@ -1,0 +1,71 @@
+<If Condition="Me.MapId == 1008" >
+	<CustomBehavior File="RunMacro" Macro="/sw clear" />
+	<CustomBehavior File="RunMacro" Macro="/sw play" />
+	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
+
+	<CustomBehavior File="ForcedMount" />
+
+	<MoveTo X="448.3198" Y="1343.965" Z="120.2104" />
+
+	<DisableBehavior Name="Combat" />
+		<RunTo X="475.6693" Y="1367.408" Z="110.1001" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="504.3095" Y="1426.467" Z="104.0201" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="460.3041" Y="1426.997" Z="104.4077" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="469.0912" Y="1464.004" Z="104.1065" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+
+	<DisableBehavior Name="Combat" />
+		<RunTo X="404.576" Y="1431.469" Z="95.57002" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="366.397" Y="1403.422" Z="88.43561" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="334.4135" Y="1432.531" Z="88.85175" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="362.9068" Y="1445.893" Z="88.92902" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+
+	<DisableBehavior Name="Combat" />
+		<RunTo X="368.1447" Y="1469.588" Z="94.52983" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+		<RunTo X="408.521" Y="1481.372" Z="98.32433" />
+		<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+
+	<CustomBehavior File="RunMacro" Macro="/sw pause" />
+</If>
