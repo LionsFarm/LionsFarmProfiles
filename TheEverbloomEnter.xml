@@ -4,6 +4,6 @@
 		<CustomBehavior File="FlyTo" X="7117.57" Y="197.1" Z="145.211" />
 	</If>
 	<MoveTo X="7099.438" Y="194.6341" Z="144.6124" />
-	<CustomBehavior File="MyCTM" X="7095.512" Y="194.1026" Z="144.8626" TerminateWhen="Me.IsInInstance" />
+	<CustomBehavior File="MyCTM" X="7107.848" Y="195.1683" Z="144.615" TerminateWhen="Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
 </If>
