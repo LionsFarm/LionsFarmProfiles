@@ -3,7 +3,7 @@
 		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Heading to Instance.&quot;);" />
 		<CustomBehavior File="FlyTo" X="7117.57" Y="197.1" Z="145.211" />
 	</If>
-	<MoveTo X="7099.438" Y="194.6341" Z="144.6124" />
-	<CustomBehavior File="MyCTM" X="7107.848" Y="195.1683" Z="144.615" TerminateWhen="Me.IsInInstance" />
+	<MoveTo X="7107.848" Y="195.1683" Z="144.615" />
+	<CustomBehavior File="MyCTM" X="7099.438" Y="194.6341" Z="144.6124" TerminateWhen="Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
 </If>
