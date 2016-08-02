@@ -1,4 +1,4 @@
-<If Condition="Me.MapId == 1008" >
+<If Condition="Me.MapId == 7109" >
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
