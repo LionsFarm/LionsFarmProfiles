@@ -1,15 +1,12 @@
-<If Condition="Me.MapId == 7109" >
+<If Condition="Me.MapId == 1008" >
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
-
-	<MoveTo X="448.3198" Y="1343.965" Z="120.2104" />
 
 	<DisableBehavior Name="Combat" />
 		<RunTo X="475.6693" Y="1367.408" Z="110.1001" />
 		<RunTo X="504.3095" Y="1426.467" Z="104.0201" />
 	<EnableBehavior Name="Combat" />
-	<CustomBehavior File="ForcedDismount" />
 
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
