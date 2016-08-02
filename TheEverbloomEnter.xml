@@ -2,7 +2,7 @@
 	<If Condition="Me.Location.Distance(new WoWPoint(7095.67, 193.83, 144.80)) &gt; 100" >
 		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Heading to Instance.&quot;);" />
 	</If>
-	<RunTo X="7117.57" Y="197.1" Z="145.211" />
+	<RunTo X="7117.57" Y="197.1" Z="145.211" TerminateWhen="Me.IsInInstance" />
 	<CustomBehavior File="MyCTM" X="7095.512" Y="194.1026" Z="144.8626" TerminateWhen="Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
 </If>
