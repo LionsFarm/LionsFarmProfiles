@@ -3,10 +3,35 @@
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
 
+	<CustomBehavior File="ForcedMount" />
+	
+	<MoveTo X="448.3198" Y="1343.965" Z="120.2104" />
+
+	
 	<DisableBehavior Name="Combat" />
 		<RunTo X="475.6693" Y="1367.408" Z="110.1001" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
 		<RunTo X="504.3095" Y="1426.467" Z="104.0201" />
 	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
+		<RunTo X="460.3041" Y="1426.997" Z="104.4077" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
+	<RunTo X="469.0912" Y="1464.004" Z="104.1065" />
+	<RunTo X="404.576" Y="1431.469" Z="95.57002" />
+	<RunTo X="366.397" Y="1403.422" Z="88.43561" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
 
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
