@@ -8,5 +8,4 @@
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
 </If>
 
-private const uint AreaTriggerId_LivingLeaves = 7607;
-AddAvoidObject(10, AreaTriggerId_LivingLeaves);
+	<CustomBehavior File="Hooks\Avoid" AvoidName="LivingLeaves" ObjectId="7607" Radius="10" ObjectType="AreaTrigger" />
