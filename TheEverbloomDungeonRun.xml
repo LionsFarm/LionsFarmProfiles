@@ -6,7 +6,7 @@
 	<CustomBehavior File="GetOutOfGroundEffectAndAuras" PreferKillingMobId="86372" />
 	
 	<CustomBehavior File="Hooks\Avoid" AvoidName="Gnarlroot" ObjectId="81984" Radius="25" />
-	<CustomBehavior File="GetOutOfGroundEffectAndAuras" StartNpcId="81984" MoveOutOfGroundEffectAuraId1="7607" />
+	<CustomBehavior File="Hooks\Avoid" AvoidName="Living Leaves" ObjectId="169497" Radius="7" ObjectType="AreaTrigger" />
 
 	<CustomBehavior File="ForcedMount" />
 	
