@@ -74,8 +74,8 @@
 					Front Side
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="492.6188" Y="1519.383" Z="103.1594" />
 		<RunTo X="539.0625" Y="1560.011" Z="91.61118" />
+		<RunTo X="492.6188" Y="1519.383" Z="103.1594" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
