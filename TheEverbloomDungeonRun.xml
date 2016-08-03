@@ -3,7 +3,7 @@
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
 
-	<CustomBehavior File="Hooks\Avoid" AvoidName="Gnarlroot" ObjectId="81984" Radius="25" />
+	<CustomBehavior File="Hooks\Avoid" AvoidName="Gnarlroot" ObjectId="81984" Radius="20" />
 
 	<CustomBehavior File="ForcedMount" />
 	
