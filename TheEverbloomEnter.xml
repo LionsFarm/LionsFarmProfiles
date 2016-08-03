@@ -7,3 +7,5 @@
 	<CustomBehavior File="MyCTM" X="7097.138" Y="193.4476" Z="144.6451" TerminateWhen="Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.IsInInstance" />
 </If>
+
+	<CustomBehavior File="Hooks\Avoid" AvoidName="Gnarlroot" ObjectId="81984" Radius="20" />
