@@ -5,26 +5,26 @@
 
 	<CustomBehavior File="Hooks\Avoid" AvoidName="Gnarlroot" ObjectId="81984" Radius="20" />
 
-	<CustomBehavior File="ForcedMount" />
-	
-	<MoveTo X="448.3198" Y="1343.965" Z="120.2104" />
-
 
 					Left Side
+	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="475.6693" Y="1367.408" Z="110.1001" />
+	<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="504.3095" Y="1426.467" Z="104.0201" />
+	<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="460.3041" Y="1426.997" Z="104.4077" />
+	<CustomBehavior File="WaitTimer" WaitTime="1500" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
@@ -60,20 +60,13 @@
 	<CustomBehavior File="ForcedDismount" />
 
 	
-					Avoid First Boss
+					Front Side
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="403.0908" Y="1558.778" Z="88.48518" />
 		<RunTo X="445.837" Y="1566.966" Z="86.64956" />
 		<RunTo X="466.2379" Y="1589.017" Z="85.91299" />
 		<RunTo X="495.9756" Y="1584.224" Z="87.16016" />
-	<EnableBehavior Name="Combat" />
-	<CustomBehavior File="ForcedDismount" />
-	
-	
-					Front Side
-	<CustomBehavior File="ForcedMount" />
-	<DisableBehavior Name="Combat" />
 		<RunTo X="539.0625" Y="1560.011" Z="91.61118" />
 		<RunTo X="492.6188" Y="1519.383" Z="103.1594" />
 	<EnableBehavior Name="Combat" />
