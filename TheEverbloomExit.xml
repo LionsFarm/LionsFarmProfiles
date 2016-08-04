@@ -1,10 +1,6 @@
 <If Condition="Me.MapId == 1279" >
-	<If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots &amp;&amp; !(Me.KnowsSpell(61425) || Me.KnowsSpell(61447))" >
-		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Skipping wait since we're going to the vendor.&quot;);" />
-	<Else>
-		<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
-	</Else>
-	</If>
+	<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
+		
 	<CustomBehavior File="RunCode" Code="AzyulGPHTracker.LogGPH();" />
 	<CustomBehavior File="MyCTM" X="417.59" Y="1304.31" Z="125.50" TerminateWhen="!Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="!Me.IsInInstance" />
