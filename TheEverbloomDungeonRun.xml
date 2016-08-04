@@ -3,12 +3,6 @@
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
 
-	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
-		<PursuitList>
-			<PursueUnit Id="81820" Priority="9999" />
-		</PursuitList>
-	</CustomBehavior>
-
 
 				<!-- Left Side -->
 	<CustomBehavior File="ForcedMount" />
@@ -83,6 +77,12 @@
 		<RunTo X="495.9756" Y="1584.224" Z="87.16016" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
+		<PursuitList>
+			<PursueUnit Id="81820" Priority="9999" />
+		</PursuitList>
+	</CustomBehavior>
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
