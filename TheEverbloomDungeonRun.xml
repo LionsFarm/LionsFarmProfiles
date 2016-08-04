@@ -1,7 +1,4 @@
 <If Condition="Me.MapId == 1279" >
-	<If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots &amp;&amp; !(Me.KnowsSpell(61425) || Me.KnowsSpell(61447))" >
-		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Sell and Repair.&quot;);" />
-	</If>
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
@@ -97,7 +94,6 @@
 	<CustomBehavior File="ForcedMount" />
 		<RunTo X="502.4385" Y="1454.097" Z="109.0261" />
 		<CustomBehavior File="MyCTM" X="501.0907" Y="1403.802" Z="102.9185" />
-		<MoveTo X="430.5888" Y="1329.127" Z="125.0078" />
 	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
