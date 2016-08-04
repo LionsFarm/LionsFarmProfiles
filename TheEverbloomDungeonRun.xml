@@ -97,8 +97,7 @@
 	<CustomBehavior File="ForcedMount" />
 		<RunTo X="502.4385" Y="1454.097" Z="109.0261" />
 		<CustomBehavior File="MyCTM" X="501.0907" Y="1403.802" Z="102.9185" />
-		<RunTo X="430.5888" Y="1329.127" Z="125.0078" />
-	<CustomBehavior File="ForcedDismount" />
+		<MoveTo X="430.5888" Y="1329.127" Z="125.0078" />
 	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
