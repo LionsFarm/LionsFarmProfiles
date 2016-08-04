@@ -5,7 +5,7 @@
 
 	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
 		<PursuitList>
-			<PursueUnit Id="81820" />
+			<PursueUnit Id="81820" Priority="9999" />
 		</PursuitList>
 	</CustomBehavior>
 
