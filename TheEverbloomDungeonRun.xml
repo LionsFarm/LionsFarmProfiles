@@ -1,4 +1,4 @@
-<If Condition="Me.MapId == 1279" >
+<If Condition="Me.MapId == 1279 &amp;&amp; Me.FreeBagSlots &gt;= Settings.Instance.VendorMinBagSlots" >
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
