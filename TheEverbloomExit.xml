@@ -1,6 +1,6 @@
 <If Condition="Me.MapId == 1279" >
+	<DisableBehavior Name="Combat" />
 	<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
-		
 	<CustomBehavior File="RunCode" Code="AzyulGPHTracker.LogGPH();" />
 	<CustomBehavior File="MyCTM" X="417.59" Y="1304.31" Z="125.50" TerminateWhen="!Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="!Me.IsInInstance" />
