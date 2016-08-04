@@ -6,7 +6,6 @@
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
-	<EnableBehavior Name="Combat" />
 
 					Left Side
 	<CustomBehavior File="ForcedMount" />
