@@ -55,10 +55,14 @@
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 
-
-
 	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
+		<RunTo X="368.0707" Y="1513.987" Z="92.07558" />
+		<RunTo X="410.506" Y="1455.905" Z="99.54673" />
+		<RunTo X="499.8958" Y="1404.841" Z="103.0359" />
 		<RunTo X="501.0907" Y="1403.802" Z="102.9185" />
+	<EnableBehavior Name="Combat" />
+	
 	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
