@@ -15,7 +15,7 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="470.4934" Y="1469.683" Z="103.69" />
+		<RunTo X="467.547" Y="1466.578" Z="104.1898" />
 		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
 		<RunTo X="460.3041" Y="1426.997" Z="104.4077" />
 	<EnableBehavior Name="Combat" />
