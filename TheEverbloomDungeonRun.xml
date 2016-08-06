@@ -5,7 +5,6 @@
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
 
 
-
 				<!-- Left Side -->
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
