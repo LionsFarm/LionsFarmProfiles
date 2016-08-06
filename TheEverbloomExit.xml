@@ -6,7 +6,7 @@
 	</Else>
 	</If>
 	<CustomBehavior File="RunCode" Code="AzyulGPHTracker.LogGPH();" />
-	<CustomBehavior File="GoThruPortal" X="417.59" Y="1304.31" Z="125.50" />
+	<CustomBehavior File="MyCTM" X="417.59" Y="1304.31" Z="125.50" TerminateWhen="!Me.IsInInstance" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="!Me.IsInInstance" />
 	<CustomBehavior File="Misc\RunLua" Lua="ResetInstances();" />
 </If>
