@@ -1,5 +1,5 @@
 <If Condition="Me.MapId == 1279" >
-		<If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots &amp;&amp; !(Me.KnowsSpell(61425) || Me.KnowsSpell(61447))" >
+	<If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots &amp;&amp; !(Me.KnowsSpell(61425) || Me.KnowsSpell(61447))" >
 		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Sell and Repair.&quot;);" />
 	<Else>
 		<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
