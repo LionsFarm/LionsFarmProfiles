@@ -1,6 +1,6 @@
 <If Condition="Me.Class == WoWClass.DeathKnight" >
-	<CustomBehavior File="Hooks\DoWhen" ActivityName="MoveDefHook" LogExecution="false" AllowUseDuringCombat="True" UseWhen="(Settings.Instance.UseDefensiveHooks &amp;&amp; Me.Combat &amp;&amp; Me.IsMoving &amp;&amp; Me.IsInInstance &amp;&amp; Me.IsAlive) &amp;&amp; (Me.HealthPercent &lt;= 50 &amp;&amp; SpellManager.CanCast(108194))" >
+	<CustomBehavior File="Hooks\DoWhen" ActivityName="MoveDefHook" LogExecution="false" AllowUseDuringCombat="True" UseWhen="(Settings.Instance.UseDefensiveHooks &amp;&amp; Me.Combat &amp;&amp; Me.IsMoving &amp;&amp; Me.IsInInstance &amp;&amp; Me.IsAlive) &amp;&amp; SpellManager.CanCast(108194) &amp;&amp; SpellManager.CanCast(108194))" >
 		<CustomBehavior File="RunCode" Code="Logging.Write(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: Using Asphyxiate.&quot;);" />
-		<CustomBehavior File="RunCode" Code="SpellManager.Cast(108194);" />
+		<CustomBehavior File="Misc\RunLua" Lua="TargetNearestEnemy(); CastSpellByID(108194);" />
 	</CustomBehavior>
 </If>
