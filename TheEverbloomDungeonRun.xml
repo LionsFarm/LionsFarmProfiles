@@ -83,6 +83,12 @@
 		</PursuitList>
 	</CustomBehavior>
 	
+	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
+		<RunTo X="498.2436" Y="1397.422" Z="102.9141" />
+		<RunTo X="428.8432" Y="1326.947" Z="125.0164" />
+	<EnableBehavior Name="Combat" />
+	
 	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
