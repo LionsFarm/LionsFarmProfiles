@@ -63,8 +63,25 @@
 		<RunTo X="430.4684" Y="1474.165" Z="104.9702" />
 		<RunTo X="472.518" Y="1466.556" Z="103.7377" />
 		<RunTo X="507.9326" Y="1432.85" Z="103.8312" />
-		<RunTo X="429.4283" Y="1324.885" Z="125.0165" />
 	<EnableBehavior Name="Combat" />
+	
+	
+				<!-- Right Side -->
+	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
+		<RunTo X="540.72" Y="1402.421" Z="93.77662" />
+		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+		<RunTo X="545.0187" Y="1374.105" Z="95.31121" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
+		<PursuitList>
+			<PursueUnit Id="81820" Priority="9999" />
+			<PursueUnit Id="84767" Priority="8888" />
+			<PursueUnit Id="81819" Priority="7777" />
+			<PursueUnit Id="81864" Priority="6666" />			
+		</PursuitList>
+	</CustomBehavior>
 	
 	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
