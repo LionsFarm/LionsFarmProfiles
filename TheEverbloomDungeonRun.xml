@@ -78,6 +78,7 @@
 	<CustomBehavior File="WaitTimer" WaitTime="30000" />
 		<PursuitList>
 			<PursueUnit Id="81820" PursueWhen="UNIT.Distance &lt;= 30" Priority="10" />
+			<PursueUnit Id="84767" PursueWhen="UNIT.Distance &lt;= 30" Priority="8" />
 		</PursuitList>
 	</CustomBehavior>
 	
