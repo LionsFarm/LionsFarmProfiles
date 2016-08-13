@@ -103,7 +103,6 @@
 		<RunTo X="497.8157" Y="1395.066" Z="102.9745" />
 		<RunTo X="428.8917" Y="1325.853" Z="125.0161" />
 	<EnableBehavior Name="Combat" />
-	<CustomBehavior File="ForcedDismount" />
 	
 	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
