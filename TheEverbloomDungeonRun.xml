@@ -95,6 +95,6 @@
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
-	<CustomBehavior File="ForcedMount" />
+	
 	<CustomBehavior File="RunMacro" Macro="/sw pause" />
 </If>
