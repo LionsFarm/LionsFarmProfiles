@@ -77,41 +77,19 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="568.0235" Y="1369.126" Z="93.14986" />
-		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
-		<RunTo X="585.5046" Y="1404.137" Z="89.57085" />
-	<EnableBehavior Name="Combat" />
-	<CustomBehavior File="ForcedDismount" />
-	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="!Me.Combat">
-		<PursuitList>
-			<PursueUnit Id="81820" PursueWhen="UNIT.Distance &lt;= 10" Priority="9999" />
-			<PursueUnit Id="84767" Priority="8888" />
-		</PursuitList>
-	</CustomBehavior>
-	
-	<CustomBehavior File="ForcedMount" />
-	<DisableBehavior Name="Combat" />
-		<RunTo X="594.8077" Y="1367.883" Z="88.60583" />
-		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
-		<RunTo X="585.5046" Y="1404.137" Z="89.57085" />
-	<EnableBehavior Name="Combat" />
-	<CustomBehavior File="ForcedDismount" />
-	
-	<CustomBehavior File="ForcedMount" />
-	<DisableBehavior Name="Combat" />
 		<RunTo X="626.789" Y="1330.375" Z="80.08175" />
 		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
 		<RunTo X="595.3128" Y="1328.837" Z="83.13645" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
-	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="586.2693" Y="1374.812" Z="89.07697" />
-		<RunTo X="550.5172" Y="1388.208" Z="94.173" />
-		<RunTo X="498.2436" Y="1397.422" Z="102.9141" />
-		<RunTo X="428.8432" Y="1326.947" Z="125.0164" />
+		<RunTo X="608.5691" Y="1342.366" Z="83.16528" />
+		<RunTo X="596.3355" Y="1405.055" Z="87.84175" />
+		<RunTo X="538.0011" Y="1406.471" Z="93.82005" />
+		<RunTo X="496.7133" Y="1394.635" Z="103.112" />
+		<RunTo X="429.3196" Y="1327.132" Z="125.016" />
 	<EnableBehavior Name="Combat" />
 	
 	
