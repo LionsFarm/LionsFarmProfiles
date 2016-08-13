@@ -68,6 +68,16 @@
 	
 	
 				<!-- Right Side -->
+				
+	<CustomBehavior File="ForcedMount" />
+	<RunTo X="520.1199" Y="1381.594" Z="98.15242" />
+	<CustomBehavior File="ForcedDismount" />
+	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
+		<PursuitList>
+			<PursueUnit Id="81820" PursueWhen="UNIT.Distance &lt;= 30" Priority="10" />
+		</PursuitList>
+	</CustomBehavior>
+	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="550.665" Y="1401.847" Z="93.9635" />
