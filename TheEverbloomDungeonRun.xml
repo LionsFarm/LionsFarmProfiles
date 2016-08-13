@@ -71,7 +71,7 @@
 				
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-	<RunTo X="539.1691" Y="1368.683" Z="96.5345" />
+	<RunTo X="518.2816" Y="1381.122" Z="98.52737" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
@@ -91,6 +91,14 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
+		<RunTo X="568.0235" Y="1369.126" Z="93.14986" />
+		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+		<RunTo X="585.5046" Y="1404.137" Z="89.57085" />
+	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
+	
+	<CustomBehavior File="ForcedMount" />
+	<DisableBehavior Name="Combat" />
 		<RunTo X="626.789" Y="1330.375" Z="80.08175" />
 		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
 		<RunTo X="595.3128" Y="1328.837" Z="83.13645" />
@@ -99,12 +107,9 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="607.8521" Y="1377.198" Z="86.78475" />
-		<RunTo X="594.183" Y="1409.5" Z="89.00749" />
-		<RunTo X="571.6616" Y="1406.884" Z="92.12442" />
-		<RunTo X="534.1462" Y="1408.521" Z="94.05296" />
-		<RunTo X="497.8157" Y="1395.066" Z="102.9745" />
-		<RunTo X="428.8917" Y="1325.853" Z="125.0161" />
+		<RunTo X="573.2625" Y="1359.789" Z="90.95164" />
+		<RunTo X="500.993" Y="1394.883" Z="102.5376" />
+		<RunTo X="427.7332" Y="1325.972" Z="125.0161" />
 	<EnableBehavior Name="Combat" />
 	
 	
