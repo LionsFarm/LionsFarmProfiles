@@ -64,6 +64,7 @@
 		<RunTo X="472.518" Y="1466.556" Z="103.7377" />
 		<RunTo X="507.9326" Y="1432.85" Z="103.8312" />
 	<EnableBehavior Name="Combat" />
+	<CustomBehavior File="ForcedDismount" />
 	
 	
 				<!-- Right Side -->
