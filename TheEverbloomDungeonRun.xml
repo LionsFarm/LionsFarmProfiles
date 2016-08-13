@@ -74,8 +74,7 @@
 	<RunTo X="534.619" Y="1370.206" Z="96.53979" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
-	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True">
-	<CustomBehavior File="WaitTimer" WaitTime="30000" TerminateWhen="Me.Combat" />
+	<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" WaitTime="30000" TerminateWhen="Me.Combat">
 		<PursuitList>
 			<PursueUnit Id="81820" PursueWhen="UNIT.Distance &lt;= 30" Priority="10" />
 		</PursuitList>
