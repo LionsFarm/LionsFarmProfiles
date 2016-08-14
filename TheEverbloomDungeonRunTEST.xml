@@ -21,7 +21,11 @@
 	<RunTo X="534.619" Y="1370.206" Z="96.53979" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
-	<CustomBehavior File="KillUntilComplete" WaitForNpcs="True" Mobids="81820" />
+	<CustomBehavior File="KillUntilComplete" WaitForNpcs="True">
+		<MobIds>
+			<MobId="81820" PursueWhen="UNIT.Distance &lt;= 30" Priority="10" />
+		</MobIds>
+	</CustomBehavior>
 	
 		<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
