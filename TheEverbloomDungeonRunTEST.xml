@@ -58,8 +58,8 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="573.2625" Y="1359.789" Z="90.95164" />
-		<RunTo X="500.993" Y="1394.883" Z="102.5376" />
+		<RunTo X="579.1279" Y="1378.54" Z="89.92262" />
+		<RunTo X="502.247" Y="1398.664" Z="102.5149" />
 	<EnableBehavior Name="Combat" />
 
 
