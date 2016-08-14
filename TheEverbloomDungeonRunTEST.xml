@@ -23,7 +23,7 @@
 	<CustomBehavior File="ForcedDismount" />
 	<CustomBehavior File="KillUntilComplete" WaitForNpcs="True">
 		<MobIds>
-			<MobId="81820" PursueWhen="UNIT.Distance &lt;= 30" Priority="10" />
+			<MobId="81820" />
 		</MobIds>
 	</CustomBehavior>
 	
