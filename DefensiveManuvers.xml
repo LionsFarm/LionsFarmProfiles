@@ -1,0 +1,37 @@
+<While Condition="Me.IsAlive">
+	<CustomBehavior File="Hooks\DoWhen" ActivityName="Interupt" AllowUseDuringCombat="True" UseWhen="Unit(81820).CastingSpellId == 164965">
+		<DisableBehavior Name="Combat" />
+		<If Condition="Me.GotTarget &amp;&amp; Me.CurrentTarget != Unit(81820)">
+			<CustomBehavior File="RunMacro" Macro="/target Everbloom Mender" NumOfTimes="1" />
+		</If>
+		<CustomBehavior File="RunCode" Code="Me.CurrentTarget.Face()" />		
+		<If Condition="(Me.Class == WoWClass.DeathKnight)">
+			<If Condition="!WoWSpell.FromId(47528).Cooldown">
+				<CustomBehavior File="RunMacro" Macro="/cast Mind Freeze" NumOfTimes="1" />
+			
+			<ElseIf Condition="!WoWSpell.FromId(48707).Cooldown">
+				<CustomBehavior File="RunMacro" Macro="/cast Anti-Magic Shell" NumOfTimes="1" />
+				</ElseIf>	
+				
+			<ElseIf Condition="!WoWSpell.FromId(49576).Cooldown">
+				<CustomBehavior File="RunMacro" Macro="/cast Death Grip" NumOfTimes="1" />
+				</ElseIf>
+							
+			<Else>	
+				<While Condition="Unit(81820).CastingSpellId == 164965">
+					<CustomBehavior File="RunMacro" Macro="/cast Asphyxiate" NumOfTimes="1" />
+				</While>
+				</Else>
+			</If>	
+		</If>
+		
+		<EnableBehavior Name="Combat" />
+		<CustomBehavior File="KillUntilComplete" ImmediatelySwitchToHighestPriorityTarget="True" TerminateWhen="Object(81820, o => o.ToUnit().IsDead) != null || Unit(81820) == null">
+			<PursuitList>
+				<PursueUnit Id="81820" Priority="9999" />
+				<PursueUnit Id="84767" Priority="8888" />
+				<PursueUnit Id="81819" Priority="7777" />
+				<PursueUnit Id="81864" Priority="6666" />			
+			</PursuitList>
+		</CustomBehavior>
+	</CustomBehavior>
