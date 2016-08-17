@@ -80,9 +80,14 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<RunTo X="566.5714" Y="1370.706" Z="93.48119" />
-		<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
-		<RunTo X="556.1808" Y="1394.981" Z="93.82574" />
+	<If Condition="(HasSpell(49576))">
+		<RunTo X="563.2482" Y="1394.575" Z="92.98347" />
+		<CustomBehavior File="RunMacro" Macro="/target Everbloom Mender" NumOfTimes="1" />
+		<If Condition="Me.GotTarget">
+			<CustomBehavior File="RunCode" Code="Me.CurrentTarget.Face()" />
+		</If>
+		<CustomBehavior File="RunMacro" Macro="/cast Death Grip" NumOfTimes="1" />
+	</If>
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
