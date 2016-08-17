@@ -1,5 +1,5 @@
-<If Condition="Me.ZoneId == 1279 &amp;&amp; Unit(81819, u => u.Distance &lt; 70 &amp;&amp; u.IsAlive) == null">
+<If Condition="Me.ZoneId == 7109 &amp;&amp; Unit(81819, u => u.Distance &lt; 70 &amp;&amp; u.IsAlive) == null">
 	<RunTo X="432.2582" Y="1327.102" Z="125.0079" />	
 	<CustomBehavior File="GoThruPortal" Timeout="30000" X="420.6615" Y="1308.974" Z="125.4129" />
-	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.ZoneId != 1279" />
+	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="Me.ZoneId != 7109" />
 </If>
