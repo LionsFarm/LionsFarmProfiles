@@ -5,8 +5,9 @@
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
 
 
+
 				<!-- Entrance -->
-				
+
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="475.6693" Y="1367.408" Z="110.1001" />
@@ -18,7 +19,7 @@
 
 
 				<!-- Left Side -->
-	
+
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="467.547" Y="1466.578" Z="104.1898" />
@@ -74,9 +75,9 @@
 	<CustomBehavior File="ForcedDismount" />
 	
 	
-		
-				<!-- Right Side -->
 	
+				<!-- Right Side -->
+
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="550.665" Y="1401.847" Z="93.9635" />
