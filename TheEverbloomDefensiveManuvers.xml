@@ -7,16 +7,16 @@
 	<If Condition="(Me.Class == WoWClass.DeathKnight)">
 		<If Condition="!WoWSpell.FromId(49576).Cooldown">
 			<CustomBehavior File="RunMacro" Macro="/cast Death Grip" NumOfTimes="1" />
-		</ElseIf>
 			
 		<ElseIf Condition="!WoWSpell.FromId(47528).Cooldown">
 			<CustomBehavior File="RunMacro" Macro="/cast Mind Freeze" NumOfTimes="1" />
-		</ElseIf>
+			</ElseIf>
 		
 		<ElseIf Condition="!WoWSpell.FromId(48707).Cooldown">
 			<CustomBehavior File="RunMacro" Macro="/cast Anti-Magic Shell" NumOfTimes="1" />
-			
-		<Else>	
+			</ElseIf>
+
+			<Else>	
 			<While Condition="Unit(81820).CastingSpellId == 164965">
 				<CustomBehavior File="RunMacro" Macro="/cast Asphyxiate" NumOfTimes="1" />
 			</While>
