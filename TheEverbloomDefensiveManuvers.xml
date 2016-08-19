@@ -1,3 +1,5 @@
+<CustomBehavior File="Hooks\Avoid" AvoidName="LivingLeaves" ObjectId="7607" Radius="6" ObjectType="AreaTrigger" />
+
 <CustomBehavior File="Hooks\DoWhen" ActivityName="Interupt" AllowUseDuringCombat="True" UseWhen="Unit(81820).CastingSpellId == 164965">
 	<DisableBehavior Name="Combat" />
 	<If Condition="Me.GotTarget &amp;&amp; Me.CurrentTarget != Unit(81820)">
