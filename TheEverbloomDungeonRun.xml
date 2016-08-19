@@ -1,4 +1,4 @@
-<If Condition="Me.MapId == 1279" >
+<If Condition="Me.MapId == 1279 TerminateWhen="!Me.IsInInstance" >
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 
