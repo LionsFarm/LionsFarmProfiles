@@ -52,7 +52,7 @@
 	
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
-		<MyCTM X="476.9286" Y="1591.484" Z="86.45428" />
+	<CustomBehavior File="MyCTM" X="476.9286" Y="1591.484" Z="86.45428" />
 		<RunTo X="550.665" Y="1401.847" Z="93.9635" />
 		<RunTo X="591.7484" Y="1410.872" Z="91.0505" />
 		<RunTo X="571.8922" Y="1367.505" Z="92.2364" />
