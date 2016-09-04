@@ -1,4 +1,4 @@
-<If Condition="Me.MapId != 1279" >
+<If Condition="Me.ZoneId != 7109" >
 	<If Condition="Me.Location.Distance(new WoWPoint(7095.67, 193.83, 144.80)) &gt; 100" >
 		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Heading to Instance.&quot;);" />
 		<CustomBehavior File="FlyTo" X="7117.57" Y="197.1" Z="145.211" />
