@@ -1,4 +1,0 @@
-<If Condition="SpellManager.CanCast(61425) || SpellManager.CanCast(61447)" >
-	<CustomBehavior File="ForceSetVendor" DoRepair="True" DoSell="True" />
-	<CustomBehavior File="WaitTimer" WaitTime="1000" />
-</If>
