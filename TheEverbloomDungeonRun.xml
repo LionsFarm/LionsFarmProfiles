@@ -65,7 +65,7 @@
 		<RunTo X="591.7484" Y="1410.872" Z="91.0505" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
-		<Hotspot  />
+
 	<CustomBehavior File="ForcedMount" />
 	<DisableBehavior Name="Combat" />
 		<RunTo X="594.8132" Y="1366.572" Z="88.5955" />
