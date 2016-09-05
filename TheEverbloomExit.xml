@@ -1,5 +1,10 @@
 <If Condition="Me.ZoneId == 7109" >
-	<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
+	<If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots &amp;&amp; !(Me.KnowsSpell(61425) || Me.KnowsSpell(61447) || Me.KnowsSpell(122708))" >
+		<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Sell and Repair.&quot;);" />
+	<Else>
+		<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
+	</Else>
+	</If>
 	
 	<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; !Me.HasAura(1784)"><CustomBehavior File="Misc\RunLua" Lua="CastSpellByID(1784);" /></If>
 	
