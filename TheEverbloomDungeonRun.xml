@@ -106,6 +106,10 @@
 		<RunTo X="494.4447" Y="1395.022" Z="103.3458" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
+	
+	<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; !Me.HasAura(1784)"><CustomBehavior File="Misc\RunLua" Lua="CastSpellByID(1856);" /></If>
+	<CustomBehavior File="WaitTimer" WaitTime="3000" TerminateWhen="ObjectManager.GetObjectsOfType&lt;WoWUnit&gt;().Where(u =&gt; u.Combat &amp;&amp; u.Distance &lt;= 7).Count() &gt;= 1" />
+
 
 	<CustomBehavior File="ForcedMount" />
 		<RunTo X="428.3612" Y="1326.402" Z="125.0162" />
