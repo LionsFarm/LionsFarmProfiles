@@ -1,4 +1,4 @@
-<If Condition="Me.ZoneId == 7109 &amp;&amp; Me.FreeBagSlots &gt;= Settings.Instance.VendorMinBagSlots" >
+<If Condition="Me.ZoneId == 7109" >
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
 
