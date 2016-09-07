@@ -1,4 +1,4 @@
-<If Condition="Me.ZoneId == 7109 &amp;&amp; Me.FreeBagSlots &gt;= Settings.Instance.VendorMinBagSlots" >
+<If Condition="Me.ZoneId == 7109" >
 	<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
 
 	<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; !Me.HasAura(1784)"><CustomBehavior File="Misc\RunLua" Lua="CastSpellByID(1784);" /></If>
