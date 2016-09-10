@@ -1,12 +1,6 @@
 <If Condition="Me.ZoneId == 7109" >
 	<CustomBehavior File="RunMacro" Macro="/sw clear" />
 	<CustomBehavior File="RunMacro" Macro="/sw play" />
-	
-	<CustomBehavior File="Hooks\DoWhen" ActivityName="Silence" AllowUseDuringCombat="True" UseWhen="Me.HasAura(169495)">
-			<DisableBehavior Name="Combat" />
-			<CustomBehavior File="Misc\RunLua" Lua="MoveForwardStart();" WaitTime="1000" /> 
-			<EnableBehavior Name="Combat" />
-	</CustomBehavior>
 
 	<CustomBehavior File="RunCode" Code="InstanceTimer.StartTimer();" />
 
@@ -67,7 +61,6 @@
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
 	
-	<CustomBehavior File="Hooks\DoWhen" ActivityName="Silence" Command="Remove" />
 	
 				<!-- Right Side -->
 
@@ -114,7 +107,7 @@
 		<RunTo X="756.1299" Y="1380.367" Z="84.26171" />
 	<EnableBehavior Name="Combat" />
 	<CustomBehavior File="ForcedDismount" />
-	
+
 
 				<!-- Moving to Exit -->
 	<CustomBehavior File="ForcedMount" />
