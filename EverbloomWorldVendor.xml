@@ -1,6 +1,6 @@
 <If Condition="Me.FreeBagSlots &lt; Settings.Instance.VendorMinBagSlots" >
 	<CustomBehavior File="RunCode" Code="Bots.Professionbuddy.PBLog.Log(System.Windows.Media.Colors.DeepSkyBlue, &quot;[LionsFarm]: &quot;, System.Windows.Media.Colors.LightGreen, &quot;Moving to Sell and Repair.&quot;);" />
-	<MoveTo Nav="Fly" X="-397.6517" Y="1877.925" Z="51.30085" />
+	<MoveTo X="-397.6517" Y="1877.925" Z="51.30085" />
 
 	<CustomBehavior File="InteractWith" MobId="87775" MobState="Alive" WaitTime="1000" X="-435.9753" Y="1851.404" Z="41.62179" />
 	<CustomBehavior File="RunCode" >
