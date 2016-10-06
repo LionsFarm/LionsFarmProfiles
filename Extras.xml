@@ -1,5 +1,3 @@
-<CustomBehavior File="RunCode" Code="AzyulGPHTracker.BlacklistBagItems();" />
-
 <CustomBehavior File="RunCode" Type="Definition"><![CDATA[
 	public class InstanceTimer
 		{
